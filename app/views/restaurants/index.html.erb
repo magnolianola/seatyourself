@@ -1,0 +1,5 @@
+<h1>Restaurants</h1>
+<p>Select a restaurant to make a reservation. | <%= link_to "Post a New Restaurant", new_restaurant_path %> </p>
+<% @restaurants.each do |p| %>
+	<center><p><li><%= link_to p.name, restaurant_path(p) %></li></p><center>
+<% end %>

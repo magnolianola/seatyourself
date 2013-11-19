@@ -1,0 +1,5 @@
+<h1>Current Reservation</h1>
+<center><%= link_to "Make a new reservation", restaurants_path %> | <%= link_to "Edit a Reservation", edit_restaurant_reservation_path(@restaurant.id, @reservation.id) %></center>
+
+<center><p><b><%= @reservation[:name] %></b> - <%= @reservation[:booking_time] %> </p></center>
+

@@ -1,0 +1,19 @@
+<h1>Edit a Restaurant</h1>
+
+<p>
+	<%= link_to "Back", restaurant_path %>
+</p>
+
+<%= form_for @restaurant do |f| %>
+	<p>
+		<%= f.label "name" %><br>
+		</br><%= f.text_field "name" %>
+	</p>
+	<p>
+		<%= f.label "description" %><br>
+		</br><%= f.text_area "description" %>
+	</p>
+	<p>
+		<%= submit_tag "Save" %>
+	</p>
+<% end %>
